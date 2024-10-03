@@ -6,7 +6,7 @@ services:
     container_name: 2048-game1
     restart: unless-stopped
     ports:
-      - '8000:9000'
+      - '8000:8080'
     volumes:
       - ./:/app
   game2:
@@ -14,6 +14,6 @@ services:
       container_name: 2048-game2
       restart: unless-stopped
       ports:
-        - '8001:9001'
+        - '7000:8080'
       volumes:
         - ./:/app

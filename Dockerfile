@@ -1,6 +1,4 @@
-FROM docker/whalesay:latest
-FROM node:latest
-LABEL Name=2048game Version=0.0.1
+FROM node:20.9.0
 
 WORKDIR /app
 COPY . .
