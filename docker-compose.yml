@@ -1,0 +1,19 @@
+version: '1'
+
+services:
+  game1:
+    build: ./
+    container_name: 2048-game1
+    restart: unless-stopped
+    ports:
+      - '8000:9000'
+    volumes:
+      - ./:/app
+  game2:
+      build: ./
+      container_name: 2048-game2
+      restart: unless-stopped
+      ports:
+        - '8001:9001'
+      volumes:
+        - ./:/app
